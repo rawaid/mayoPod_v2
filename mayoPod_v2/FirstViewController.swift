@@ -19,7 +19,42 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var songLengthSlider: UISlider!
     @IBOutlet weak var songYearStepper: UIStepper!
     
-
+    ///////////////////// Singleton Code ///////////////////////////
+    
+    var thePlaylistModel: sharedPlaylistModel = sharedPlaylistModel.theSharedPlaylistModel
+    var myPlaylist:Playlist = Playlist()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        myPlaylist = thePlaylistModel.thePlaylist
+    }
+    
+    // this works because we initialize mySong to an empty Song
+    override func viewWillAppear(animated: Bool) {
+        if (myPlaylist.plistName != "none")
+        {
+            .text = myPlaylist.plistName
+        }
+    }
+    
+    @IBAction func textFieldDoneEditing(sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    
+    @IBAction func backgroundTap(sender: UIControl) {
+        songNameField.resignFirstResponder()
+    }
+    
+    @IBAction func saveSongPressed(sender: UIButton) {
+        myPlaylist.plistSong = Song()
+    }
+    ////////////////////////////////////////////////////////////////
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
     @IBAction func songYearStep(sender: UIStepper) {
         //sets label text value as sent value form user click
         songYearLbel.text = Int(sender.value).description
@@ -100,9 +135,10 @@ class FirstViewController: UIViewController {
             alertController.addAction(UIAlertAction(title: "Sweet, thanks.", style: UIAlertActionStyle.Default,handler: nil))
             self.presentViewController(alertController, animated: true, completion: nil)
         }
-
+        
     }
     @IBAction func addPlaylist(sender: AnyObject) {
+        
     }
     
     func refreshUI(){
@@ -114,16 +150,6 @@ class FirstViewController: UIViewController {
         songAlbumField.text = ""
         songProducerField.text = ""
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+    
 }
 
