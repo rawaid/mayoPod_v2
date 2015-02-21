@@ -12,6 +12,40 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var sortedTextView: UITextView!
     @IBOutlet weak var sortSegmenter: UISegmentedControl!
     
+    ///////////////////// Singleton Code ///////////////////////////
+    
+    var thePlaylistModel: sharedPlaylistModel = sharedPlaylistModel.theSharedPlaylistModel
+    var myPlaylist:Playlist = Playlist()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        myPlaylist = thePlaylistModel.thePlaylist
+        
+        sortedTextView.backgroundColor = UIColor.grayColor()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        if (myPlaylist.plistName != "none")
+        {
+            sortedTextView.text = myPlaylist.plistName
+        }
+    }
+    
+    @IBAction func textFieldDoneEditing(sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    
+    @IBAction func backgroundTap(sender: UIControl) {
+        sortedTextView.resignFirstResponder()
+    }
+    
+    @IBAction func saveSongPressed(sender: UIButton) {
+        myPlaylist.plistName = sortedTextView.text
+    }
+    
+    ////////////////////////////////////////////////////////////////
+    
     @IBAction func sortSegment(sender: UISegmentedControl) {
         if sortSegmenter.selectedSegmentIndex==0{
             // var artList = songList.sorted{$0.name < $1.name}
@@ -21,18 +55,11 @@ class SecondViewController: UIViewController {
             // var artList = albumList.sorted{$0.Artist < $1.Artist}
         }
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        sortedTextView.backgroundColor = UIColor.grayColor()
-
-    }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
-
