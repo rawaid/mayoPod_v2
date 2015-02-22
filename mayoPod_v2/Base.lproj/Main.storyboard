@@ -145,7 +145,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="362" y="752"/>
+            <point key="canvasLocation" x="-436" y="846"/>
         </scene>
         <!--Third-->
         <scene sceneID="27g-P1-Yop">
@@ -158,17 +158,112 @@
                     <view key="view" contentMode="scaleToFill" id="PSu-To-DdY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remove Songs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zkx-Qe-sqZ">
+                                <rect key="frame" x="149" y="65" width="117" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndp-Hl-Qme">
+                                <rect key="frame" x="179" y="221" width="44" height="30"/>
+                                <state key="normal" title="Delete">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Song" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P2M-dY-QwV">
+                                <rect key="frame" x="51" y="108" width="312" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Artist" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LV5-Eq-Kq8">
+                                <rect key="frame" x="51" y="166" width="312" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remove Albums" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4G-7Z-Joa">
+                                <rect key="frame" x="143" y="275" width="129" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="129" id="eR2-t1-Vyu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PE3-bO-Nzg">
+                                <rect key="frame" x="179" y="431" width="44" height="30"/>
+                                <state key="normal" title="Delete">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Album" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Egv-yM-P6c">
+                                <rect key="frame" x="51" y="318" width="312" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Artist" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Cq-87-i4h">
+                                <rect key="frame" x="51" y="376" width="312" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remove Playlists" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07m-0v-wJL">
+                                <rect key="frame" x="142" y="490" width="131" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Playlist" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4XJ-iB-PeY">
+                                <rect key="frame" x="51" y="534" width="312" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iL2-6l-T2p">
+                                <rect key="frame" x="179" y="588" width="44" height="30"/>
+                                <state key="normal" title="Delete">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PE3-bO-Nzg" firstAttribute="top" secondItem="0Cq-87-i4h" secondAttribute="bottom" constant="25" id="1V0-fh-Zyo"/>
+                            <constraint firstItem="LV5-Eq-Kq8" firstAttribute="top" secondItem="P2M-dY-QwV" secondAttribute="bottom" constant="28" id="3yL-Dv-oqe"/>
+                            <constraint firstItem="PE3-bO-Nzg" firstAttribute="leading" secondItem="iL2-6l-T2p" secondAttribute="leading" id="5mS-1c-ffI"/>
+                            <constraint firstItem="Egv-yM-P6c" firstAttribute="top" secondItem="O4G-7Z-Joa" secondAttribute="bottom" constant="22" id="6tZ-Bq-UZV"/>
+                            <constraint firstItem="07m-0v-wJL" firstAttribute="centerX" secondItem="4XJ-iB-PeY" secondAttribute="centerX" id="8fM-wq-FuX"/>
+                            <constraint firstItem="4XJ-iB-PeY" firstAttribute="top" secondItem="07m-0v-wJL" secondAttribute="bottom" constant="23" id="9gd-k6-Oev"/>
+                            <constraint firstItem="P2M-dY-QwV" firstAttribute="centerX" secondItem="Zkx-Qe-sqZ" secondAttribute="centerX" id="Cqn-5S-2U7"/>
+                            <constraint firstItem="0Cq-87-i4h" firstAttribute="trailing" secondItem="Egv-yM-P6c" secondAttribute="trailing" id="JzZ-QA-HPV"/>
+                            <constraint firstItem="Zkx-Qe-sqZ" firstAttribute="top" secondItem="XhH-Qk-CWq" secondAttribute="bottom" constant="45" id="QbG-jQ-Xv7"/>
+                            <constraint firstItem="O4G-7Z-Joa" firstAttribute="centerX" secondItem="Egv-yM-P6c" secondAttribute="centerX" id="RWh-eM-hqA"/>
+                            <constraint firstItem="0Cq-87-i4h" firstAttribute="leading" secondItem="4XJ-iB-PeY" secondAttribute="leading" id="VOJ-8h-khZ"/>
+                            <constraint firstItem="LV5-Eq-Kq8" firstAttribute="leading" secondItem="P2M-dY-QwV" secondAttribute="leading" id="Ws6-U3-SYD"/>
+                            <constraint firstItem="Ndp-Hl-Qme" firstAttribute="leading" secondItem="PSu-To-DdY" secondAttribute="leading" constant="179" id="YbY-g7-7CV"/>
+                            <constraint firstItem="O4G-7Z-Joa" firstAttribute="top" secondItem="Ndp-Hl-Qme" secondAttribute="bottom" constant="24" id="aD5-Y9-hmn"/>
+                            <constraint firstItem="O4G-7Z-Joa" firstAttribute="centerX" secondItem="PSu-To-DdY" secondAttribute="centerX" id="aIf-Dj-PEe"/>
+                            <constraint firstItem="Ndp-Hl-Qme" firstAttribute="top" secondItem="LV5-Eq-Kq8" secondAttribute="bottom" constant="25" id="bKo-9h-Cw8"/>
+                            <constraint firstItem="P2M-dY-QwV" firstAttribute="top" secondItem="Zkx-Qe-sqZ" secondAttribute="bottom" constant="22" id="gaL-2L-kBR"/>
+                            <constraint firstItem="LV5-Eq-Kq8" firstAttribute="trailing" secondItem="P2M-dY-QwV" secondAttribute="trailing" id="hcg-eI-n8Q"/>
+                            <constraint firstItem="LV5-Eq-Kq8" firstAttribute="trailing" secondItem="Egv-yM-P6c" secondAttribute="trailing" id="jJY-nm-PDQ"/>
+                            <constraint firstItem="iL2-6l-T2p" firstAttribute="top" secondItem="4XJ-iB-PeY" secondAttribute="bottom" constant="24" id="khH-Ma-YKV"/>
+                            <constraint firstItem="07m-0v-wJL" firstAttribute="top" secondItem="PE3-bO-Nzg" secondAttribute="bottom" constant="29" id="mJL-15-drM"/>
+                            <constraint firstItem="0Cq-87-i4h" firstAttribute="top" secondItem="Egv-yM-P6c" secondAttribute="bottom" constant="28" id="mXe-a6-Ia3"/>
+                            <constraint firstItem="4XJ-iB-PeY" firstAttribute="trailing" secondItem="0Cq-87-i4h" secondAttribute="trailing" id="ndL-3B-WRh"/>
+                            <constraint firstItem="LV5-Eq-Kq8" firstAttribute="leading" secondItem="Egv-yM-P6c" secondAttribute="leading" id="old-Vf-cPS"/>
+                            <constraint firstItem="0Cq-87-i4h" firstAttribute="leading" secondItem="Egv-yM-P6c" secondAttribute="leading" id="vNA-Pf-Min"/>
+                            <constraint firstItem="Ndp-Hl-Qme" firstAttribute="leading" secondItem="PE3-bO-Nzg" secondAttribute="leading" id="w8I-or-KZE"/>
+                            <constraint firstItem="P2M-dY-QwV" firstAttribute="leading" secondItem="PSu-To-DdY" secondAttribute="leadingMargin" constant="35" id="wbg-ye-CBP"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="8t9-Gy-8mF" userLabel="Third"/>
+                    <tabBarItem key="tabBarItem" title="Remove" image="first" id="8t9-Gy-8mF" userLabel="Third"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cme-pI-HhX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-82" y="752"/>
+            <point key="canvasLocation" x="440" y="846"/>
         </scene>
-        <!--Second-->
+        <!--Music Lists-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="mayoPod_v2" customModuleProvider="target" sceneMemberID="viewController">
@@ -193,7 +288,7 @@
                                 </connections>
                             </segmentedControl>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xuy-as-7y6">
-                                <rect key="frame" x="16" y="81" width="292" height="606"/>
+                                <rect key="frame" x="16" y="82" width="382" height="591"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -201,7 +296,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Music Lists" image="second" id="cPa-gy-q4n"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="sortSegmenter" destination="TEw-5V-Tdu" id="n6z-Gc-RPg"/>
@@ -210,7 +305,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="834" y="720"/>
+            <point key="canvasLocation" x="2" y="846"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -234,6 +329,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>
