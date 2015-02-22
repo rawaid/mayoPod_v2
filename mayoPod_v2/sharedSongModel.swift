@@ -19,7 +19,7 @@ class sharedSongModel {
     }
     
     
-    class var theSharedPlaylistModel: sharedMusicModel {
-        return _musicModelSharedInstance
+    class var theSharedPlaylistModel: sharedSongModel {
+        return _songModelSharedInstance
     }
 }
