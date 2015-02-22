@@ -15,7 +15,7 @@ class sharedSongModel {
     let theSong: Song
     
     init(){
-        
+        theSong = Song()
     }
     
     
