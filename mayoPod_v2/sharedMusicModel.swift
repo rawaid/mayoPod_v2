@@ -1,5 +1,5 @@
 //
-//  sharedPlaylistModel.swift
+//  sharedMusicModel.swift
 //  mayoPod_v2
 //
 //  Created by Grayson Wilkins on 2/20/15.
@@ -8,11 +8,13 @@
 
 import Foundation
 
-private let _playlistModelSharedInstance = sharedPlaylistModel()
+private let _musicModelSharedInstance = sharedMusicModel()
 
-class sharedPlaylistModel {
+class sharedMusicModel {
     
     let thePlaylist: Playlist
+    let theAlbumlist: Album
+    let theSonglist
     
     init(){
         thePlaylist = Playlist()

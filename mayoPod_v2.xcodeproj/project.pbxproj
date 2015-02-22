@@ -18,7 +18,7 @@
 		4A4FB4001A915A3200508DB5 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4FB3FF1A915A3200508DB5 /* ThirdViewController.swift */; };
 		4A89AF101A9A8A61008D4CEB /* PlaylistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A89AF0F1A9A8A61008D4CEB /* PlaylistModel.swift */; };
 		4A89AF121A9A8A97008D4CEB /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A89AF111A9A8A97008D4CEB /* AlbumModel.swift */; };
-		570616771A9835A400973D69 /* sharedPlaylistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570616761A9835A400973D69 /* sharedPlaylistModel.swift */; };
+		570616771A9835A400973D69 /* sharedMusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570616761A9835A400973D69 /* sharedMusicModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,7 @@
 		4A4FB3FF1A915A3200508DB5 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		4A89AF0F1A9A8A61008D4CEB /* PlaylistModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistModel.swift; sourceTree = "<group>"; };
 		4A89AF111A9A8A97008D4CEB /* AlbumModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
-		570616761A9835A400973D69 /* sharedPlaylistModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sharedPlaylistModel.swift; sourceTree = "<group>"; };
+		570616761A9835A400973D69 /* sharedMusicModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sharedMusicModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				4A4FB3C81A91556B00508DB5 /* AppDelegate.swift */,
-				570616761A9835A400973D69 /* sharedPlaylistModel.swift */,
+				570616761A9835A400973D69 /* sharedMusicModel.swift */,
 				4A4FB3FB1A91561200508DB5 /* SoundSPaceModel.swift */,
 				4A4FB3CA1A91556B00508DB5 /* FirstViewController.swift */,
 				4A4FB3CC1A91556B00508DB5 /* SecondViewController.swift */,
@@ -230,7 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				570616771A9835A400973D69 /* sharedPlaylistModel.swift in Sources */,
+				570616771A9835A400973D69 /* sharedMusicModel.swift in Sources */,
 				4A4FB3CD1A91556B00508DB5 /* SecondViewController.swift in Sources */,
 				4A89AF101A9A8A61008D4CEB /* PlaylistModel.swift in Sources */,
 				4A4FB3C91A91556B00508DB5 /* AppDelegate.swift in Sources */,
