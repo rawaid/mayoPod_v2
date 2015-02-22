@@ -150,7 +150,7 @@
         <!--Third-->
         <scene sceneID="27g-P1-Yop">
             <objects>
-                <viewController id="BX4-4S-5wz" userLabel="Third" sceneMemberID="viewController">
+                <viewController id="BX4-4S-5wz" userLabel="Third" customClass="ThirdViewController" customModule="mayoPod_v2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XhH-Qk-CWq"/>
                         <viewControllerLayoutGuide type="bottom" id="y33-Ms-byn"/>
