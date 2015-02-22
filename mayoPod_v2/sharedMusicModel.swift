@@ -12,15 +12,16 @@ private let _musicModelSharedInstance = sharedMusicModel()
 
 class sharedMusicModel {
     
-    let thePlaylist: Playlist
-    let theAlbumlist: Album
-    let theSonglist
+    let thePlaylist: [Playlist]
+    let theAlbumlist: [Album]
+    let theSonglist: [Song]
     
     init(){
-        thePlaylist = Playlist()
+        
     }
     
-    class var theSharedPlaylistModel: sharedPlaylistModel {
-        return _playlistModelSharedInstance
+    
+    class var theSharedPlaylistModel: sharedMusicModel {
+        return _musicModelSharedInstance
     }
 }
