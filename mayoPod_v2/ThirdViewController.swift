@@ -24,7 +24,40 @@ class ThirdViewController: UIViewController {
     ////////////////////////////////////////////////////////////////
     
     @IBAction func songRemoval(sender: UIButton) {
-        
+        let songName = String(songRemoveSongField.text as NSString)
+        let songArtist = String(songRemoveArtistField.text as NSString)
+
+        var valid = true
+        if songName == "" || songArtist == ""{
+            valid = false
+        }
+        if valid == true{
+            var count = 0
+            
+            var found = false
+            for i in songList {
+                i.getSongName()
+                
+                if i.getSongName() == songName {
+                    if i.getArtistName() == songArtist{
+                        removeSong(count)
+                        found = true
+                        //errorTextView.backgroundColor = UIColor.greenColor()
+                        //errorTextView.text = "Song successfully removed. Good job."
+                    }
+                }
+                count++
+            }
+            if found == true{
+                refreshUI()
+            } else {
+                //errorTextView.backgroundColor = UIColor.redColor()
+                //errorTextView.text = "Song not found. MayoPod is confused"
+            }
+        } else {
+            //errorTextView.backgroundColor = UIColor.redColor()
+            //errorTextView.text = "Enter in arist and song. MayoPod is angry!"
+        }
     }
     
     @IBAction func albumRemoval(sender: UIButton) {
@@ -33,6 +66,14 @@ class ThirdViewController: UIViewController {
     
     @IBAction func playlistRemoval(sender: UIButton) {
         
+    }
+    
+    func refreshUI() {
+        songRemoveSongField.text = ""
+        songRemoveArtistField.text = ""
+        albumRemoveTitleField.text = ""
+        albumRemoveArtistField.text = ""
+        playlistRemoveField.text = ""
     }
     
     override func viewDidLoad() {
