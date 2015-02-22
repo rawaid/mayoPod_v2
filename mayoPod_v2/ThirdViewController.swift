@@ -36,8 +36,6 @@ class ThirdViewController: UIViewController {
             
             var found = false
             for i in songList {
-                i.getSongName()
-                
                 if i.getSongName() == songName {
                     if i.getArtistName() == songArtist{
                         removeSong(count)
@@ -60,12 +58,83 @@ class ThirdViewController: UIViewController {
         }
     }
     
+    func removeSong(songIndex: Int) {
+        songList.removeAtIndex(songIndex)
+    }
+    
     @IBAction func albumRemoval(sender: UIButton) {
+        let albumName = String(albumRemoveTitleField.text as NSString)
+        let albumArtist = String(albumRemoveArtistField.text as NSString)
         
+        var valid = true
+        if albumName == "" || albumArtist == ""{
+            valid = false
+        }
+        if valid == true{
+            var count = 0
+            
+            var found = false
+            for i in albumList{
+                if i.getAlbumName() == albumName{
+                    if i.getArtistName() == albumArtist{
+                        removeAlbum(count)
+                        found = true
+                        //errorTextView.backgroundColor = UIColor.greenColor()
+                        //errorTextView.text = "Song successfully removed. Good job."
+                    }
+                }
+                count++
+            }
+            if found == true {
+                refreshUI()
+            }else{
+                //errorTextView.backgroundColor = UIColor.redColor()
+                //errorTextView.text = "Song not found. MayoPod is confused"
+            }
+        }else{
+            //errorTextView.backgroundColor = UIColor.redColor()
+            //errorTextView.text = "Enter in arist and song. MayoPod is angry!"
+        }
+    }
+    
+    func removeAlbum(albumIndex: Int) {
+        albumList.removeAtIndex(albumIndex)
     }
     
     @IBAction func playlistRemoval(sender: UIButton) {
+        let playlistName = String(playlistRemoveField.text as NSString)
         
+        var valid = true
+        if playlistName == ""{
+            valid = false
+        }
+        if valid == true{
+            var count = 0
+            
+            var found = false
+            for i in playlistList{
+                if i.getPlaylistName() == playlistName{
+                    removeAlbum(count)
+                    found = true
+                    //errorTextView.backgroundColor = UIColor.greenColor()
+                    //errorTextView.text = "Song successfully removed. Good job."
+                }
+                count++
+            }
+            if found == true {
+                refreshUI()
+            }else{
+                //errorTextView.backgroundColor = UIColor.redColor()
+                //errorTextView.text = "Song not found. MayoPod is confused"
+            }
+        }else{
+            //errorTextView.backgroundColor = UIColor.redColor()
+            //errorTextView.text = "Enter in arist and song. MayoPod is angry!"
+        }
+    }
+    
+    func removePlaylist(playlistIndex: Int) {
+        playlistList.removeAtIndex(playlistIndex)
     }
     
     func refreshUI() {
