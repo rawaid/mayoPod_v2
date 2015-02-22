@@ -27,7 +27,7 @@ class Playlist{
     }
     
     //Method: addSongToPlaylist(Song)
-    //Last Modified: 2/17/15
+    //Last Modified: 2/22/15
     //Author: Joe Delia
     //Purpose: Takes in a song parameter, checks to see if that song is already in the playlist, and adds song to the playlist if it is not already included, or shows error message saying song is already in playlist.
     //Parameters: songToAdd - Song that will be added to playlist
