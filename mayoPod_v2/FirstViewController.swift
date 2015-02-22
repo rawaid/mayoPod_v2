@@ -30,7 +30,6 @@ class FirstViewController: UIViewController {
         myPlaylist = thePlaylistModel.thePlaylist
     }
     
-    // this works because we initialize mySong to an empty Song
     override func viewWillAppear(animated: Bool) {
         if (myPlaylist.plistName != "none")
         {
