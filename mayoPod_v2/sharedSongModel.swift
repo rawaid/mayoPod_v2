@@ -12,9 +12,7 @@ private let _songModelSharedInstance = sharedSongModel()
 
 class sharedSongModel {
     
-    let thePlaylist: [Playlist]
-    let theAlbumlist: [Album]
-    let theSonglist: [Song]
+    let theSong: Song
     
     init(){
         
