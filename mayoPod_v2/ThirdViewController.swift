@@ -18,6 +18,11 @@ class ThirdViewController: UIViewController {
     @IBOutlet weak var playlistRemoveField: UITextField!
     @IBOutlet weak var playlistRemoveButton: UIButton!
     
+    ///////////////////// Singleton Code ///////////////////////////
+    
+    
+    ////////////////////////////////////////////////////////////////
+    
     @IBAction func songRemoval(sender: UIButton) {
         
     }
