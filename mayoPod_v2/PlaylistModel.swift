@@ -82,4 +82,8 @@ class Playlist{
     func getSongList() -> [Song]{
         return plistSong
     }
+    
+    func getPlaylistName() -> String{
+        return plistName
+    }
 }
