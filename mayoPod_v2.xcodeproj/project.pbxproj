@@ -18,9 +18,21 @@
 		4A4FB4001A915A3200508DB5 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4FB3FF1A915A3200508DB5 /* ThirdViewController.swift */; };
 		4A89AF101A9A8A61008D4CEB /* PlaylistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A89AF0F1A9A8A61008D4CEB /* PlaylistModel.swift */; };
 		4A89AF121A9A8A97008D4CEB /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A89AF111A9A8A97008D4CEB /* AlbumModel.swift */; };
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+		4AA699BB1A9A9CA700D15502 /* sharedPlaylistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA699BA1A9A9CA700D15502 /* sharedPlaylistModel.swift */; };
+		4AA699BD1A9A9CBF00D15502 /* sharedAlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA699BC1A9A9CBF00D15502 /* sharedAlbumModel.swift */; };
+		570616771A9835A400973D69 /* sharedSongsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570616761A9835A400973D69 /* sharedSongsModel.swift */; };
+=======
+=======
+>>>>>>> origin/master
+>>>>>>> Stashed changes
 		4AA699BB1A9A9CA700D15502 /* sharedPlaylistsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA699BA1A9A9CA700D15502 /* sharedPlaylistsModel.swift */; };
 		4AA699BD1A9A9CBF00D15502 /* sharedAlbumsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA699BC1A9A9CBF00D15502 /* sharedAlbumsModel.swift */; };
 		570616771A9835A400973D69 /* sharedSongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570616761A9835A400973D69 /* sharedSongModel.swift */; };
+>>>>>>> origin/master
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,9 +61,21 @@
 		4A4FB3FF1A915A3200508DB5 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		4A89AF0F1A9A8A61008D4CEB /* PlaylistModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistModel.swift; sourceTree = "<group>"; };
 		4A89AF111A9A8A97008D4CEB /* AlbumModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+		4AA699BA1A9A9CA700D15502 /* sharedPlaylistModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sharedPlaylistModel.swift; sourceTree = "<group>"; };
+		4AA699BC1A9A9CBF00D15502 /* sharedAlbumModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sharedAlbumModel.swift; sourceTree = "<group>"; };
+		570616761A9835A400973D69 /* sharedSongsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sharedSongsModel.swift; sourceTree = "<group>"; };
+=======
+=======
+>>>>>>> origin/master
+>>>>>>> Stashed changes
 		4AA699BA1A9A9CA700D15502 /* sharedPlaylistsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sharedPlaylistsModel.swift; sourceTree = "<group>"; };
 		4AA699BC1A9A9CBF00D15502 /* sharedAlbumsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sharedAlbumsModel.swift; sourceTree = "<group>"; };
 		570616761A9835A400973D69 /* sharedSongModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sharedSongModel.swift; sourceTree = "<group>"; };
+>>>>>>> origin/master
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +118,16 @@
 			isa = PBXGroup;
 			children = (
 				4A4FB3C81A91556B00508DB5 /* AppDelegate.swift */,
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+				570616761A9835A400973D69 /* sharedSongsModel.swift */,
+=======
+>>>>>>> origin/master
+=======
+>>>>>>> origin/master
+>>>>>>> Stashed changes
 				4A4FB3FB1A91561200508DB5 /* SoundSPaceModel.swift */,
 				570616761A9835A400973D69 /* sharedSongModel.swift */,
 				4A4FB3CA1A91556B00508DB5 /* FirstViewController.swift */,
@@ -236,7 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				570616771A9835A400973D69 /* sharedSongModel.swift in Sources */,
+				570616771A9835A400973D69 /* sharedSongsModel.swift in Sources */,
 				4A4FB3CD1A91556B00508DB5 /* SecondViewController.swift in Sources */,
 				4AA699BD1A9A9CBF00D15502 /* sharedAlbumsModel.swift in Sources */,
 				4A89AF101A9A8A61008D4CEB /* PlaylistModel.swift in Sources */,
