@@ -170,6 +170,9 @@
                                 <state key="normal" title="Delete">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="songRemoval:" destination="BX4-4S-5wz" eventType="touchUpInside" id="bgz-OM-ITP"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Song" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P2M-dY-QwV">
                                 <rect key="frame" x="51" y="108" width="312" height="30"/>
@@ -195,6 +198,9 @@
                                 <state key="normal" title="Delete">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="albumRemoval:" destination="BX4-4S-5wz" eventType="touchUpInside" id="E5g-wQ-yU8"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Album" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Egv-yM-P6c">
                                 <rect key="frame" x="51" y="318" width="312" height="30"/>
@@ -222,6 +228,9 @@
                                 <state key="normal" title="Delete">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="playlistRemoval:" destination="BX4-4S-5wz" eventType="touchUpInside" id="HuM-I2-JC2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -258,10 +267,20 @@
                     <tabBarItem key="tabBarItem" title="Remove" image="first" id="8t9-Gy-8mF" userLabel="Third"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="albumRemoveArtistField" destination="0Cq-87-i4h" id="1ck-xr-iG0"/>
+                        <outlet property="albumRemoveButton" destination="PE3-bO-Nzg" id="QSV-x4-wh3"/>
+                        <outlet property="albumRemoveTitleField" destination="Egv-yM-P6c" id="Z56-iV-CVL"/>
+                        <outlet property="playlistRemoveButton" destination="iL2-6l-T2p" id="24e-We-ZOl"/>
+                        <outlet property="playlistRemoveField" destination="4XJ-iB-PeY" id="VPg-xU-INH"/>
+                        <outlet property="songRemoveArtistField" destination="LV5-Eq-Kq8" id="4al-ui-gW2"/>
+                        <outlet property="songRemoveButton" destination="Ndp-Hl-Qme" id="7ae-uU-e40"/>
+                        <outlet property="songRemoveSongField" destination="P2M-dY-QwV" id="pZw-YE-U0l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cme-pI-HhX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="440" y="846"/>
+            <point key="canvasLocation" x="433" y="846"/>
         </scene>
         <!--Music Lists-->
         <scene sceneID="wg7-f3-ORb">
