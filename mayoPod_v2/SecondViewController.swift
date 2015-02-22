@@ -14,35 +14,6 @@ class SecondViewController: UIViewController {
     
     ///////////////////// Singleton Code ///////////////////////////
     
-    var thePlaylistModel: sharedPlaylistModel = sharedPlaylistModel.theSharedPlaylistModel
-    var myPlaylist:Playlist = Playlist()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        myPlaylist = thePlaylistModel.thePlaylist
-        
-        sortedTextView.backgroundColor = UIColor.grayColor()
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        if (myPlaylist.plistName != "none")
-        {
-            sortedTextView.text = myPlaylist.plistName
-        }
-    }
-    
-    @IBAction func textFieldDoneEditing(sender: UITextField) {
-        sender.resignFirstResponder()
-    }
-    
-    @IBAction func backgroundTap(sender: UIControl) {
-        sortedTextView.resignFirstResponder()
-    }
-    
-    @IBAction func saveSongPressed(sender: UIButton) {
-        myPlaylist.plistName = sortedTextView.text
-    }
     
     ////////////////////////////////////////////////////////////////
     

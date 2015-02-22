@@ -21,33 +21,7 @@ class FirstViewController: UIViewController {
     
     ///////////////////// Singleton Code ///////////////////////////
     
-    var thePlaylistModel: sharedPlaylistModel = sharedPlaylistModel.theSharedPlaylistModel
-    var myPlaylist:Playlist = Playlist()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        myPlaylist = thePlaylistModel.thePlaylist
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        if (myPlaylist.plistName != "none")
-        {
-            .text = myPlaylist.plistName
-        }
-    }
-    
-    @IBAction func textFieldDoneEditing(sender: UITextField) {
-        sender.resignFirstResponder()
-    }
-    
-    @IBAction func backgroundTap(sender: UIControl) {
-        songNameField.resignFirstResponder()
-    }
-    
-    @IBAction func saveSongPressed(sender: UIButton) {
-        myPlaylist.plistSong = Song()
-    }
     ////////////////////////////////////////////////////////////////
     
     override func didReceiveMemoryWarning() {

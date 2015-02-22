@@ -12,20 +12,22 @@ class ThirdViewController: UIViewController {
     @IBOutlet weak var songRemoveSongField: UITextField!
     @IBOutlet weak var songRemoveArtistField: UITextField!
     @IBOutlet weak var songRemoveButton: UIButton!
-    
-    
     @IBOutlet weak var albumRemoveTitleField: UITextField!
     @IBOutlet weak var albumRemoveArtistField: UITextField!
     @IBOutlet weak var albumRemoveButton: UIButton!
-
     @IBOutlet weak var playlistRemoveField: UITextField!
     @IBOutlet weak var playlistRemoveButton: UIButton!
     
     @IBAction func songRemoval(sender: UIButton) {
+        
     }
+    
     @IBAction func albumRemoval(sender: UIButton) {
+        
     }
+    
     @IBAction func playlistRemoval(sender: UIButton) {
+        
     }
     
     override func viewDidLoad() {
