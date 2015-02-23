@@ -18,7 +18,6 @@ class sharedPlaylistsModel {
         thePlaylists = []
     }
     
-    
     class var theSharedPlaylistModel: sharedPlaylistsModel {
         return _playlistsModelSharedInstance
     }
