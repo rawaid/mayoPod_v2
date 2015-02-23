@@ -22,7 +22,6 @@ class Album{
     
     var songs: [Song]
     
-    
     //Album Constructor
     //Last Modified: 2/17/15
     //Author: Josh Chang
