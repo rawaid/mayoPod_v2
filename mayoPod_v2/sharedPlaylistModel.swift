@@ -7,3 +7,19 @@
 //
 
 import Foundation
+
+private let _playlistsModelSharedInstance = sharedPlaylistsModel()
+
+class sharedPlaylistsModel {
+    
+    let thePlaylists: [Playlist]
+    
+    init(){
+        thePlaylists = []
+    }
+    
+    
+    class var theSharedPlaylistModel: sharedPlaylistsModel {
+        return _playlistsModelSharedInstance
+    }
+}
